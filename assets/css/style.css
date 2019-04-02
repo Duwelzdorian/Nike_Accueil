@@ -23,3 +23,21 @@
 .wCarousel {
   width: 768px;
 }
+
+.imgBandLeft {
+  background: url("../img/imgBandLeft.png");
+  height: auto;
+  max-width: 100%;
+}
+
+.imgBandCenter {
+  background: url("../img/imgBandCenter.png");
+  height: auto;
+  max-width: 100%;
+}
+
+.imgBandRight {
+  background: url("../img/imgBandRight.png");
+  height: auto;
+  max-width: 100%;
+}
