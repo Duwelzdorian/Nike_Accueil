@@ -1,3 +1,9 @@
+@media (max-width: 650px) {
+  div.carousel {
+    display: none;
+  }
+}
+
 .bgCarousel {
   background-color: #F7F7F7;
 }
@@ -12,4 +18,8 @@
 
 .hCarousel {
   height: 68px;
+}
+
+.wCarousel {
+  width: 768px;
 }
