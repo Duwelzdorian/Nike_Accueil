@@ -1,4 +1,4 @@
-@media (max-width: 650px) {
+@media (max-width: 360px) {
   div.carousel {
     display: none;
   }
@@ -48,13 +48,27 @@
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 650px) {
   .collapsibleBtn {
     background-color: #fff;
     border: none;
     margin: 0;
     padding: 0;
   }
+}
+
+.fontCarousel {
+  font-size: 1.125em;
+  letter-spacing: -0.1em;
+  font-weight: bold;
+}
+
+.fontLinkCarousel {
+  font-size: .75em;
+  color: #111;
+  text-decoration: underline;
+  font-weight: bold;
+  letter-spacing: -.1em;
 }
 
 .bgCarousel {
