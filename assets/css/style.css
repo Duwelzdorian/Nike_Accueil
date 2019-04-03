@@ -1,2 +1,17 @@
+.container-fluid {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+}
+
+.imagecontainer {
+  display: block;
+  min-width: 50px;
+  max-width: 30%;
+  color: black;
+  text-align: center;
+}
+
 .container {
   color: black;
+}
