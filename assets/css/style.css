@@ -15,3 +15,23 @@
 .container {
   color: black;
 }
+
+/* Ipad */
+@media all and (max-width: 800px) {
+  .imagecontainer {
+    display: none;
+    min-width: 4rem;
+    max-width: 30%;
+    color: black;
+    text-align: center;
+  }
+
+  /* version horizontale */
+  @media all and (max-height: 450px) {
+    .imagecontainer {
+      display: none;
+      min-width: 4rem;
+      max-width: 30%;
+      color: black;
+      text-align: center;
+    }
