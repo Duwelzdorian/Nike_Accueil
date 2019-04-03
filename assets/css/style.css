@@ -2,6 +2,59 @@
   div.carousel {
     display: none;
   }
+
+  .collapsibleBtn {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+
+  .activeBtn, .collapsibleBtn:hover {
+    background-color: #ccc;
+  }
+
+  .contentCollapsible { /*disabled*/
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    max-height: 0;
+  }
+
+  .contentCollapsible { /*active*/
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+  .collapsibleBtn:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+  }
+
+  .activeBtn:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+}
+
+@media (min-width: 992px) {
+  .collapsibleBtn {
+    background-color: #fff;
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .bgCarousel {
@@ -9,7 +62,7 @@
 }
 
 .carousel-control-prev-icon {
- background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23111' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23111' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
 }
 
 .carousel-control-next-icon {
@@ -44,25 +97,32 @@
 
 /* Main container */
 .overlayImage {
- position: relative;
- width: 100%;
+  position: relative;
+  width: 100%;
 }
 
 /* Original image */
 .overlayImage .image {
- display: block;
- width: 100%;
- height: auto;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 /* Original text overlay */
 .overlayImage .text {
- color: #fff;
- text-decoration: none;
- text-align: center;
- position: absolute;
- top: 50%;
- left: 50%;
- transform: translate(-50%, -50%);
- width: 100%;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.linkColor a {
+  color: #111;
+  letter-spacing: -.03em;
+  text-decoration: none;
+  font-size: .75em;
 }
