@@ -177,7 +177,6 @@ a:hover {
 
 @media (max-width: 650px) {
 
-
   .imagecontainer {
     display: none;
     min-width: 4rem;
@@ -187,13 +186,22 @@ a:hover {
   }
 }
 
+@media (min-width: 967px) {
+  .collapsibleBtn {
+    background-color: #fff;
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
 .fontCarousel {
   font-size: 1.125em;
   letter-spacing: -0.1em;
   font-weight: bold;
 }
 
-.fontLinkCarousel {
+a.fontLinkCarousel {
   font-size: .75em;
   color: #111;
   text-decoration: underline;
@@ -269,11 +277,4 @@ a:hover {
   letter-spacing: -.03em;
   text-decoration: none;
   font-size: .75em;
-}
-
-.collapsibleBtn {
-  background-color: #fff;
-  border: none;
-  margin: 0;
-  padding: 0;
 }
