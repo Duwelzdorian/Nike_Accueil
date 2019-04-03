@@ -51,10 +51,11 @@ a:hover {
 }
 
 .main-footer {
-  height: 20rem;
+  height: 100%;
   padding: 2.625rem 2.625rem 0;
   background-color: #191919;
   letter-spacing: .03em;
+  width: 100%;
 
 }
 
