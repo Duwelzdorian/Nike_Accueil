@@ -200,7 +200,7 @@ a:hover {
   font-weight: bold;
 }
 
-.fontLinkCarousel {
+a.fontLinkCarousel {
   font-size: .75em;
   color: #111;
   text-decoration: underline;
